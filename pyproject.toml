@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "MCP demo, proof of concept project to help me learn how to build MCP-integrated applications"
 readme = "README.md"
 authors = [
-    { name = "Yilei Bai, email = "yilei.bai@va.gov" }
+    { name = "Yilei Bai", email = "yilei.bai@va.gov" }
 ]
 requires-python = ">=3.12"
 dependencies = [
@@ -32,4 +32,3 @@ requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
 
 [tool.pytest.ini_options]
-pythonpath = ["src"]
