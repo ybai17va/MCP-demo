@@ -7,8 +7,8 @@ from mcp import Client, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from mcp_types import TextContent
 
-from model_wrapper import ModelWrapper
-from model import Model
+from mcp_demo.model_wrapper import ModelWrapper
+from mcp_demo.model import Model
 
 MODEL = Model(name="LLM")
 MODEL_WRAPPER = ModelWrapper(model=MODEL)
