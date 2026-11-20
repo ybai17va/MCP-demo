@@ -8,15 +8,6 @@ import json
 CONTENT_NUM_LIMIT = 1
 DEBUG_FLAG = True
 
-class Response:
-    def __init__(self, content: list[Content]):
-        self.content = content
-
-    def to_dict(self):
-        return {
-            "content": [c.to_dict() for c in self.content]
-        }
-    
 class Content:
     def __init__(self, name: str, input: dict, type: str="text", text: str="", id: int=0):
         self.name = name   # the name of the tool being used, if any
@@ -36,6 +27,15 @@ class Content:
             "type": self.type,
             "text": self.text,
             "id": self.id
+        }
+
+class Response:
+    def __init__(self, content: list[Content]):
+        self.content = content
+
+    def to_dict(self):
+        return {
+            "content": [c.to_dict() for c in self.content]
         }
 
 class Model:
