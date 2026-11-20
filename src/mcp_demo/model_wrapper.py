@@ -1,8 +1,8 @@
 # To start with, we can simulate a fake LLM. But the ModelWrapper class will be designed to work with any model, ideally.
 # structure of response and inferred from https://modelcontextprotocol.io/docs/2026-07-28/develop/build-client
 
-from model import Model, Response
-import model
+from mcp_demo.model import Model, Response
+import mcp_demo.model
 
 DEBUG_FLAG = True
 
