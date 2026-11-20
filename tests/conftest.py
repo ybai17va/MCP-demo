@@ -1,6 +1,6 @@
 import pytest
-from mcp_client import server_params
-from model import Content, Model, Response
+from mcp_demo.mcp_client import server_params
+from mcp_demo.model import Content, Model, Response
 from mcp import Client, StdioServerParameters
 from mcp.client.stdio import stdio_client
 

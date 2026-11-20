@@ -3,14 +3,14 @@
 import json
 import asyncio, sys
 import pytest
-from mcp_client import chat_loop, server_params
-from model_wrapper import ModelWrapper
-from model import Model, Response, Content
+from mcp_demo.mcp_client import chat_loop, server_params
+from mcp_demo.model_wrapper import ModelWrapper
+from mcp_demo.model import Model, Response, Content
 from mcp import Client, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-from horse import SYMBOLI_RUDOLF, GOLD_SHIP, KITASAN_BLACK
-from race import ARIMA_KINEN, TEIO_SHO, TENNO_SHO_AUTUMN
+from mcp_demo.horse import SYMBOLI_RUDOLF, GOLD_SHIP, KITASAN_BLACK
+from mcp_demo.race import ARIMA_KINEN, TEIO_SHO, TENNO_SHO_AUTUMN
 
 CONTENT_NUM_LIMIT = 1
 DEBUG_FLAG = True
