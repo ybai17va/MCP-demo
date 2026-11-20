@@ -3,9 +3,6 @@ import anyio
 
 from mcp import Client, ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
-from dotenv import load_dotenv
-
-load_dotenv(".env")
 
 # Reference for the code: 
 # https://py.sdk.modelcontextprotocol.io/client/#whats-on-a-connected-client

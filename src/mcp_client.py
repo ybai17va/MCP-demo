@@ -10,10 +10,6 @@ from mcp_types import TextContent
 from model_wrapper import ModelWrapper
 from model import Model
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
 MODEL = Model(name="LLM")
 MODEL_WRAPPER = ModelWrapper(model=MODEL)
 DEBUG_FLAG = True
