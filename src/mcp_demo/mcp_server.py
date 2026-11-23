@@ -26,6 +26,7 @@ async def make_request(url: str) -> dict[str, Any] | None:
         dict[str, Any] | None: The JSON response as a dictionary if successful, None otherwise.
     """
     headers = {"User-Agent": USER_AGENT, "Accept": "application/json"}
+    response = None
 
     async with httpx2.AsyncClient() as client:
         try:
